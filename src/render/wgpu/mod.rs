@@ -340,8 +340,8 @@ impl Renderer {
             min_filter: FilterMode::Linear,
             mag_filter: FilterMode::Linear,
             mipmap_filter: FilterMode::Linear,
-            address_mode_u: AddressMode::ClampToBorder,
-            address_mode_v: AddressMode::ClampToBorder,
+            address_mode_u: AddressMode::ClampToEdge,
+            address_mode_v: AddressMode::ClampToEdge,
             border_color: Some(SamplerBorderColor::TransparentBlack),
             ..SamplerDescriptor::default()
         });
